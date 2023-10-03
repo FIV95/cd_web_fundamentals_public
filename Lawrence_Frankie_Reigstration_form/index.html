@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+    <h1>Registration Form</h1>
+    <form>
+    <div>
+    First Name * <input type="text" name="first_name" />
+    </div>
+    Last Name * <input type="text" name="last_name" />
+    <div>
+    Email Address * <input type="text" name="email_address" />
+    </div>
+    <div>
+    Password * <input type="password" name="password" />
+    </div>
+    <div>
+    Password Confirm * <input type="text" name="password_confirm" />
+    </div>
+    Birthday <input type="date" name="birthday" />
+    <input type="radio" name="Gender" value="male" /> Male
+    <input type="radio" name="Gender" value="female" /> Female
+    <input type="radio" name="Gender" value="Non-binary" /> Non-binary
+    <input type="radio" name="Gender" value="I prefer not to answer" /> I
+      prefer not to answer
+    <div>
+    <p>A short description about myself:
+    <textarea name="description" cols="40" rows="10"></textarea></p>
+    </div>
+
+    My favortie Language <select name="favelang">
+            <option value="python">Python</option>
+            <option value="javascript">Javascript</option>
+            <option value="c#">C#</option></select>
+      <p><input type="checkbox" name="accept" id="accept">
+            <Yes, for ="accept">Yes, I would like to recieve periodic email updates. </label>
+            <div>
+                  <input type="submit" value="Create Account!" >
+            </div>
+      <p> * indicates a required field</p>
+      </p>
+</form>
+  </body>
+</html>

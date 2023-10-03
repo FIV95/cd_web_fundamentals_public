@@ -1,0 +1,37 @@
+* {
+}
+button {
+	margin-bottom: 30px;
+}
+.search {
+  font-weight: bold;
+  margin-top: 20px;
+  width: 200px;
+  display: block;
+  color: turquoise;
+  font-size: larger;
+  border: 5px solid turquoise;
+  background-color: gainsboro;
+  padding: 10px;
+  border-radius: 25px;
+
+}
+.add {
+  font-weight: bold;
+  display: block;
+  width: 60px;
+  color: whitesmoke;
+  background-color: turquoise;
+  font-size: xx-large;
+  border: 3px solid turquoise;
+  padding: 10px;
+  border-radius: 99px;
+}
+
+.createaccount {
+	background-color: cadetblue;
+	display: block;
+	border: 2px solid black;
+	box-shadow: 5px 3px black;
+	font-size: larger;
+}

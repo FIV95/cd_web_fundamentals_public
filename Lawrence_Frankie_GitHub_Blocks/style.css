@@ -1,0 +1,67 @@
+.container{
+      background-color: aliceblue;
+      width: 835px;
+      height: 700px;
+
+
+}
+
+h1 {
+
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-shadow: 1px 2px 1px darkcyan;
+      font-size: 250%;
+      text-align: center;
+      margin:auto;
+      display: flex;
+      justify-content: center;
+}
+
+.firstrow{
+      width: 800px;
+      height: 200px;
+      display: flex;
+      justify-content: space-around;
+      background-color: cornflowerblue;
+      margin: 15px 15px;
+
+}
+
+.secondrow{
+      width: 800px;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      gap: 75px;
+      background-color: darkseagreen;
+      margin: 15px 15px 15px;
+
+}
+
+.thirdrow{
+      width: 800px;
+      height: 200px;
+      display: flex;
+      justify-content: space-around;
+      background-color: darkslateblue;
+      margin: 15px 15px
+}
+
+.double{
+width: auto;
+ height: auto;
+ padding: 2px;
+ margin: 10px;
+
+}
+
+.ThreeAkind{
+ width: auto;
+ height: auto;
+ padding: 2px;
+ margin: 10px;
+
+}
+
+
+

@@ -1,0 +1,75 @@
+.container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	gap: 0px 0px;
+	border: 2px;
+	border-style: solid;
+	border-color: black;
+	font-size: x-large;
+	max-width: 800px;
+	max-height: 500px;
+	place-items: center;
+	grid-auto-flow: row;
+	grid-template-areas:
+		"Name likecounter likeButton"
+		"Message Message ."
+		". . .";
+}
+
+.Name {
+	grid-area: Name;
+	background-color: red;
+	padding: 1px;
+}
+
+.likecounter {
+	grid-area: likecounter;
+	background-color: blueviolet;
+	padding: 1px;
+}
+
+.likeButton {
+	grid-area: likeButton;
+	background-color: bisque;
+	padding: 1px;
+}
+
+.Message {
+	grid-area: Message;
+	background-color: chartreuse;
+	padding: 1px;
+	text-align: start;
+}
+
+.container2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+      width: 800px;
+      height: 800px;
+	grid-template-areas:
+		"Lady-Gaga Lady-Gaga Lady-Gaga Lady-Gaga Brad-Pitt"
+		"Lady-Gaga Lady-Gaga Lady-Gaga Lady-Gaga Brad-Pitt"
+		"Tim-Allen Tim-Allen Tim-Allen Tim-Allen Tim-Allen";
+}
+
+.Lady-Gaga {
+	grid-area: Lady-Gaga;
+	padding: 1px;
+      background-color: cadetblue;
+}
+
+.Tim-Allen {
+	grid-area: Tim-Allen;
+	padding: 1px;
+      background-color: darkviolet;
+}
+
+.Brad-Pitt {
+	grid-area: Brad-Pitt;
+	padding: 1px;
+      background-color: yellow;
+}

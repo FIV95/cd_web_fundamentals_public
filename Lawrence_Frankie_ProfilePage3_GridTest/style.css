@@ -1,0 +1,112 @@
+.container {
+	display: grid;
+	grid-template-columns: 0.9fr 1.1fr 1fr 1fr 1fr;
+	grid-template-rows: 0.5fr 1.5fr 1fr 1fr 1fr;
+	gap: px px;
+	grid-auto-flow: row;
+	grid-template-areas:
+		"Header Header Header Header Header"
+		". Column-1 . Column-2 ."
+		". Column-1 . Column-2 ."
+		". Column-1 . Column-2 ."
+		". Column-1 . Column-2 .";
+}
+
+.Header {
+	display: grid;
+      padding: 2px;
+      height: 15vh;
+      width: 100vw;
+      background-color: aliceblue;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+		". . . . . ."
+		". . . . . ."
+		". . . . . ."
+		". . . . . .";
+	grid-area: Header;
+}
+
+.Column-1 {
+	display: grid;
+      background-color: antiquewhite;
+      padding: 2px;
+	grid-template-columns: 1.1fr 0.8fr 1.1fr 1fr;
+	grid-template-rows: 0.6fr 0.9fr 0.3fr 2.2fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+		"Profile-Card-header Profile-Card-header Profile-Card-header Profile-Card-header"
+		"Profile-Card-Content Profile-Card-Content Profile-Card-Content Profile-Card-Content"
+		"Education-Header Education-Header Education-Header Education-Header"
+		"Education-Content Education-Content Education-Content Education-Content";
+	grid-area: Column-1;
+}
+
+.Profile-Card-header {
+	grid-area: Profile-Card-header;
+      padding: 2px;
+      border-color: brown;
+}
+
+.Profile-Card-Content {
+	grid-area: Profile-Card-Content;
+      padding: 2px;
+      background-color: darkblue;
+}
+
+.Education-Header {
+	grid-area: Education-Header;
+      padding: 2px;
+      background-color: yellow;
+}
+
+.Education-Content {
+	grid-area: Education-Content;
+      padding: 2px;
+      background-color: violet;
+}
+
+.Column-2 {
+	display: grid;
+      background-color: deeppink;
+      padding: 2px;
+	grid-template-columns: 0.8fr 1.2fr 1fr;
+	grid-template-rows: 0.5fr 0.6fr 0.3fr 2.6fr 1fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+		"Connection-Request-header Connection-Request-header Connection-Request-header"
+		"Connection-Requsts Connection-Requsts Connection-Requsts"
+		"Current-Connections-header Current-Connections-header Current-Connections-header"
+		"Current-Connections Current-Connections Current-Connections"
+		". . .";
+	grid-area: Column-2;
+}
+
+.Connection-Request-header {
+	grid-area: Connection-Request-header;
+      padding: 2px;
+      background-color: darkgreen;
+}
+
+.Connection-Requsts {
+	grid-area: Connection-Requsts;
+      padding: 2px;
+      background-color: springgreen;
+}
+
+.Current-Connections-header {
+	grid-area: Current-Connections-header;
+      padding: 2px;
+      background-color: coral;
+}
+
+.Current-Connections {
+	grid-area: Current-Connections;
+      padding: 2px;
+      background-color: darkgrey;
+}

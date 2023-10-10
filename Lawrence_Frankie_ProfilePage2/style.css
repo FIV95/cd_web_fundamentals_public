@@ -4,6 +4,8 @@
 	font-family: Roboto;
 }
 
+/* GENERAL CLASSES********************************************************************** */
+
 .flex {
 	display: flex;
 }
@@ -13,6 +15,8 @@
 	outline-color: rgb(223, 223, 223);
 	outline-width: 3px;
 }
+
+/* NAVIGATION BAR************************************************************************ */
 
 .navigationbox {
 	background-color: black;
@@ -51,6 +55,8 @@
 	padding: 5%;
 }
 
+/*************************************************** MAIN BODY OF PAGE ***************************************************************/
+
 .main {
 	flex-direction: row;
 	height: 100vh;
@@ -70,6 +76,8 @@
 	flex-direction: column;
 }
 
+/* COLUMN1 CONTENT************************************************************************************ */
+
 .header {
 	background-color: rgb(23, 162, 184);
 	width: 100%;
@@ -82,24 +90,101 @@
 	flex: 1.2;
 	height: 30%;
 	margin-bottom: 10%;
+	line-height: 2;
+}
+
+#ProfilePicture {
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	margin: 55px 100px;
+}
+
+.profileCardContent {
+	font-size: x-large;
+	flex-direction: column;
+	margin-left: 3.5%;
+	flex-grow: 10;
+	margin-top: 2.5%;
+}
+
+#nameplate {
+	font-size: xxx-large;
+	margin-top: 6%;
+}
+
+#mapimage {
+	height: 50%;
+	margin-bottom: 1%;
+}
+
+.locationplate {
+	flex-direction: row;
+	gap: 3%;
+	align-items: center;
+}
+
+.footera {
+	margin-left: 3.5%;
+	font-size: larger;
+	justify-content: flex-start;
+	vertical-align: middle;
+	flex-grow: 3;
+}
+
+#gearicon {
+	width: 10%;
 }
 
 .education {
 	flex: 1;
 	background-color: brown;
+	flex-direction: column;
 }
 
 .grayheader {
 	background-color: rgb(51, 51, 51);
-	width: 100%;
-	height: 20%;
-	margin-bottom: 10%;
+	justify-content: start;
+	font-size: x-large;
+	color: rgb(223, 223, 223);
+	align-items: center;
+	flex-grow: .2;
 }
+
+#headerTEXT {
+	margin-left: 5%;
+	font-size: xx-large;
+}
+
+.educationContent {
+	line-height: 1.5;
+	flex-grow: 3;
+	margin: 1.5% 10% 2.5% 10%;
+	font-size: xx-large
+}
+
+/* HEADER 2 CONTENT************************************************************************************************ */
 
 .grayheader2 {
 	background-color: rgb(51, 51, 51);
-	width: 100%;
-	height: 25%;
+	font-size: xx-large;
+	color: rgb(193,193,193);
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	padding: 5% 0% 5% 0%;
+}
+
+
+.numberidentifier {
+	border: black;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 50%;
+	color: rgb(82,82,82);
+	background-color:rgb(193,193,193);
+	font-size: xx-large;
+	padding: 5px 10px 5px 10px;
 }
 
 .connectionrequests {
@@ -111,21 +196,72 @@
 	height: fit-content;
 }
 
+.connectionrequestscontent {
+	flex-direction: column;
+	margin-top: 5%;
+}
+
+.profilediv {
+	flex-direction: row;
+	padding: 2%;
+	text-align: center;
+	align-items: center;
+	padding-bottom: 2%;
+}
+
+.profiledivcurrent {
+	flex-direction: row;
+	padding: 2%;
+	text-align: center;
+	align-items: center;
+	padding-bottom: 5%;
+	flex: 3;
+}
+
+.otherprofileimages {
+	border-radius: 50%;
+	flex: 1;
+}
+
+.acceptbutton {
+	width: 50px;
+	height: 75px;
+	flex: 1.5;
+	margin-right: 5%;
+}
+
+.declinebutton {
+	width: 50px;
+	height: 75px;
+	flex: 1.5;
+}
+
+.otherprofiles {
+	font-size: x-large;
+	flex: 5;
+}
+
 .currentConnections {
 	background-color: rebeccapurple;
 	flex-direction: column;
 	align-content: end;
 	width: 100%;
 	flex: 0.55;
-	/* height: fit-content; */
 }
 
 .CurrentConnectionsContent {
-	height: 30%;
+	flex-direction: column;
 }
 
 .footerb {
-	width: 100%;
-	margin-top: 35%;
-	margin-left: 5%;
+	font-size: large;
+	justify-content: start;
+	align-items: center;
+	flex-grow: 2;
+	height: 50%;
 }
+
+.footerbcontent {
+	margin: 5%;
+}
+

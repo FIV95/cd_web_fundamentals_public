@@ -1,0 +1,150 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Roboto;
+}
+
+.flex {
+	display: flex;
+}
+
+.navbar {
+	max-width: 75%;
+	background-color: rgb(193,193,193);
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+	align-items: flex-start;
+	justify-content: space-evenly;
+	text-align: center;
+	line-height: normal;
+	height: 65px;
+}
+
+#searchbar {
+	padding: 10px;
+	margin-top: 10px;
+}
+
+#logButton {
+	margin-top: 12px;
+	padding: .5% 3%;
+	max-width: 10%;
+	border-style: solid;
+	border-width: 1px;
+	box-shadow: 3px 5px black;
+	background-color: rgb(0, 122, 255);
+	color: snow;
+}
+
+#title {
+	font-size: xxx-large;
+	margin-top: 2px;
+	font-weight: 700;
+}
+
+.container {
+	flex-direction: row;
+      justify-content: center;
+      margin-left: 12%;
+      margin-right: 12%;
+}
+
+.column1 {
+      flex:5;
+}
+
+.colum2 {
+      flex: 2;
+}
+
+.contentBox {
+	border-style: solid;
+}
+
+.parent {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	border-style: solid;
+	max-width: 45%;
+	margin-bottom: 3%;
+      height: 40%;
+}
+
+.div1 {
+	grid-area: 1 / 1 / 4 / 2;
+	margin-top: 10px;
+	margin-left: 30px;
+}
+.div2 {
+	grid-area: 4 / 1 / 5 / 2;
+	margin-left: 30px;
+}
+.div3 {
+	grid-area: 2 / 2 / 3 / 3;
+}
+
+.likeButton {
+	background-color: yellow;
+	padding: 5px 35px;
+	box-shadow: 3px 4px black;
+}
+
+.primaryWord {
+	font-size: x-large;
+	text-anchor: start;
+	margin-left: 10px;
+}
+
+.wordType {
+	font-size: larger;
+	font-style: italic;
+	/* text-anchor: middle; */
+	margin-left: 14px;
+}
+
+.pluralCase {
+	font-size: medium;
+	font-style: italic;
+}
+
+.subParent {
+	display: grid;
+	border-style: solid;
+	grid-area: 2/2/5/3;
+	grid-template-columns: 0.85fr;
+	grid-template-rows: 0.1fr 0.15fr;
+	gap: 0px 0px;
+      align-items: center;
+      justify-content: center;
+      margin-left: auto;
+      max-height: 30%;
+      width: 300px;;
+	grid-template-areas:
+		"dojonary"
+		"definitionButton";
+}
+.dojonary {
+	grid-area: dojonary;
+      margin-left: 20px;
+      margin-top: 10px;
+}
+.definitionButton {
+	grid-area: definitionButton;
+      margin-left: 20px;
+}
+
+#dojonaryBox {
+	font-size: xx-large;
+}
+
+#addDefinitionButton {
+	background-color: rgb(40, 167, 69);
+      padding: 2px 35px;
+      font-size: x-large;
+      box-shadow: 3px 4px black;
+
+}

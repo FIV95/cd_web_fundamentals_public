@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Button Clicker</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="navbar flex">
+			<h1 id="title">Dojonary</h1>
+			<p><textarea id="searchbar" rows="1" cols="35">Search</textarea></p>
+			<button id="logButton" onclick="logChange(this)" type="button">
+				Log Out
+			</button>
+		</div>
+		<div class="container flex">
+			<div class="column1">
+				<div class="parent">
+					<div class="div1">
+						<p class="primaryWord">ninja</p>
+						<p class="wordType">noun</p>
+						<p class="pluralCase">Plural: ninjas</p>
+					</div>
+					<div class="div2">
+						<button onclick="likeAlert()" class="likeButton" type="button">Like</button>
+					</div>
+					<div class="div3">
+						<p>
+							A pracitioner skilled in the <a href="url">Japanese</a>
+							art of
+							<a href="url">ninjutsu</a>
+						</p>
+					</div>
+				</div>
+				<div class="parent">
+					<div class="div1">
+						<p class="primaryWord">ninja</p>
+						<p class="wordType">noun</p>
+						<p class="pluralCase">Plural: ninjas</p>
+					</div>
+					<div class="div2">
+						<button onclick="likeAlert()" class="likeButton" type="button">Like</button>
+					</div>
+					<div class="div3">
+						<p>
+							A <a href="url">programme</a>r who breaks down problems with
+							<a href="url">zen</a>-like focus
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="colum2 flex">
+				<div class="subParent">
+					<div class="dojonary">
+						<p id="dojonaryBox">
+							Dojonary is <br />
+							defined by YOU
+						</p>
+					</div>
+					<div class="definitionButton">
+						<button
+							id="addDefinitionButton"
+							onclick="definitionEntry(addDefinitionButton)"
+							type="button"
+						>
+							Add Definition
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Liking Likes</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="navbar flex">
+			<h1>Network</h1>
+			<h2>Your Feed</h2>
+		</div>
+		<div class="main flex">
+			<div class="column1">
+				<div class="Profile-Picture">
+					<img id="avatar" src="images/user-circle.png" />
+				</div>
+				<div class="Add-an-Avatar">
+					<p id="avatarChange"><a href="url">Add an Avatar</a></p>
+				</div>
+				<div class="Name">
+					<p id="profileName">James Doe</p>
+				</div>
+			</div>
+			<div class="column2">
+				<div class="commentbox">
+					<div class="name-likes-likeButton">
+						<p class="nameTag">Neil M</p>
+						<p class="likeCount">9</p>
+						<p>like(s)</p>
+						<button
+							onclick="likeIncrease(this)"
+							class="likeButton"
+							type="button"
+						>
+							Like
+						</button>
+					</div>
+					<div class="Comment">
+						<p>
+							I just set up this new discord bot, lme know what you all think.
+							<a href="url">link</a>
+						</p>
+					</div>
+				</div>
+				<div class="commentbox">
+					<div class="name-likes-likeButton">
+						<p class="nameTag">Nichole K</p>
+						<p class="likeCount">12</p>
+						<p>like(s)</p>
+						<button
+							onclick="likeIncrease(this)"
+							class="likeButton"
+							type="button"
+						>
+							Like
+						</button>
+					</div>
+					<div class="Comment">
+						<p>
+							I just finished my <a href="url">next comic</a>, check it out.
+						</p>
+					</div>
+				</div>
+				<div class="commentbox">
+					<div class="name-likes-likeButton">
+						<p class="nameTag">Jim R</p>
+						<p class="likeCount">9</p>
+						<p>like(s)</p>
+						<button
+							onclick="likeIncrease(this)"
+							class="likeButton"
+							type="button"
+						>
+							Like
+						</button>
+					</div>
+					<div class="Comment">
+						<p>
+							I can't stop listening to the <a href="url">new album</a>.Who else
+							is liking it?
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>

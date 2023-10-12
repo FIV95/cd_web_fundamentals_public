@@ -39,6 +39,7 @@ const acceptDecline = document.querySelectorAll('.acceptDeclineButtons');
 
 acceptDecline.forEach(acceptDecline => {
       acceptDecline.addEventListener('click', removeUser);
+
 })
 
 function removeUser() {

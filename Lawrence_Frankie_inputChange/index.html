@@ -1,0 +1,37 @@
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>"script and change"</title>
+      </head>
+      <body>
+            <h1>OnInput example</h1>
+            <p>Hello, my name is <span id="name" ></span></p>
+            <input type="text" name="name" placeholder="Your Name here" oninput="setName(this)">
+            <h1>OnSelect Example</h1>
+            <select name="food" onchange="pickFood(this)">
+                  <option>Pizza</option>
+                  <option>Kebabs</option>
+                  <option>Sandwich</option>
+                  <option>Sushi</option>
+            </select>
+            <button onclick="order()">Order Food</button>
+
+            <label>I would like to  eat</label>
+            <select onchange="chooseLunch(this)">
+            <option>taco</option>
+            <option>quesadilla</option>
+            <option>fish</option>
+            <option>chicken</option>
+            </select>
+
+            <div class="card">
+                  <p>Hello my name is:</p>
+                  <h3 id="name-tag">Example</h3>
+            </div>
+
+            <input type="text" value="Example" oninput="setName(this)">
+      </body>
+      <script src="script.js"></script>
+      </html>

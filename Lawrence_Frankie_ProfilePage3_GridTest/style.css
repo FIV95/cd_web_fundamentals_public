@@ -1,112 +1,360 @@
-.container {
+* {
+	padding: 0;
+	margin: 0;
+	font-family: Roboto;
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+}
+
+.navbar {
+	margin-left: auto;
+	margin-right: auto;
+	align-items: center;
+	background-color: rgb(42, 42, 42);
+	color: rgb(193, 193, 193);
+	height: 10vh;
+	gap: 30%;
+}
+
+.navigationList {
+	gap: 50px;
+}
+
+#profile {
+	font-size: x-large;
+}
+
+#myProfile {
+	font-weight: 800;
+}
+
+#signOut {
+	background-color: rgb(20, 162, 184);
+	color: rgb(193, 193, 193);
+	box-shadow: 2px 2px black;
+	padding: 5px 10px;
+	font-weight: 600;
+}
+
+.main {
+	flex-direction: row;
+	justify-content: center;
+	gap: 10%;
+	margin-top: 2%;
+}
+
+.column1 {
+	flex-direction: column;
+	width: 40vw;
+	gap: 40px;
+}
+
+.column2 {
+	flex-direction: column;
+	width: 40vh;
+	justify-content: flex-start;
+	gap: 20px;
+}
+
+.profileCard {
+	outline-width: 2px;
+	max-width: 40vw;
+	width: 40vw;
+	outline: auto;
+	outline-color: rgb(210, 210, 210);
 	display: grid;
-	grid-template-columns: 0.9fr 1.1fr 1fr 1fr 1fr;
-	grid-template-rows: 0.5fr 1.5fr 1fr 1fr 1fr;
-	gap: px px;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 0.5fr 1fr 0.6fr;
+	gap: 0px 0px;
+	grid-auto-flow: column;
+	grid-template-areas:
+		"Blue-Header"
+		"Name"
+		"-Location"
+		"Profile-Information"
+		"-Edit-Profile-";
+}
+
+.Blue-Header {
+	grid-area: Blue-Header;
+	background-color: rgb(20, 162, 184);
+}
+
+#profileImg {
+	width: 120px;
+	height: 120px;
+	position: relative;
+	left: 30px;
+	top: 35px;
+}
+
+.Name {
+	grid-area: Name;
+	padding: 20px;
+	margin-top: 5%;
+	font-size: xx-large;
+}
+
+#mapIcon {
+	padding: 0px 20px;
+	width: 20px;
+	justify-content: flex-start;
+	word-wrap: normal;
+}
+
+#gearIcon {
+	align-items: center;
+	justify-content: flex-start;
+	word-wrap: normal;
+	text-align: center;
+	width: 15px;
+	height: 20px;
+}
+
+.-Location {
+	grid-area: -Location;
+	align-items: center;
+	justify-content: flex-start;
+	font-size: x-large;
+}
+
+.Profile-Information {
+	grid-area: Profile-Information;
+	padding: 20px;
+	font-size: large;
+	flex-shrink: 1;
+}
+
+.-Edit-Profile- {
+	grid-area: -Edit-Profile-;
+	word-wrap: normal;
+	gap: 5px;
+	justify-content: start;
+	padding: 20px;
+	align-items: center;
+}
+
+#setting {
+	border: 0;
+	background: none;
+	text-decoration: underline;
+	color: blue;
+
+}
+
+.education {
+	outline: auto;
+	outline-color: rgb(210, 210, 210);
+	font-size: large;
+	height: 40vh;
+}
+
+.grayHeaderA {
+	background-color: rgb(42, 42, 42);
+	color: rgb(210, 210, 210);
+	justify-content: start;
+	padding: 15px;
+}
+
+#educationMain {
+	font-size: xx-large;
+	padding: 5px 20px;
+}
+
+#educationSecondary {
+	font-size: x-large;
+	font-weight: 300;
+	padding: 0px 20px;
+}
+
+#educationTriple {
+	font-size: x-large;
+	padding: 0px 20px;
+}
+
+.connnectionRequsts {
+	display: grid;
+	outline: auto;
+	padding-bottom: 20px;
+	outline-color: rgb(210, 210, 210);
+	grid-template-columns: 1fr 1.6fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	gap: 0px 0px;
 	grid-auto-flow: row;
 	grid-template-areas:
-		"Header Header Header Header Header"
-		". Column-1 . Column-2 ."
-		". Column-1 . Column-2 ."
-		". Column-1 . Column-2 ."
-		". Column-1 . Column-2 .";
+		"Header Header Header"
+		"avatarImgages avatarNames acceptDeclineButtons"
+		"avatarImgages avatarNames acceptDeclineButtons";
+}
+
+.avatarImgages {
+	margin-top: 10px;
+	justify-content: center;
+	align-items: center;
+	grid-area: avatarImgages;
+	flex-direction: column;
+	gap: 20px;
+	padding-left: 15px;
+}
+
+.otherAvatars {
+	border-radius: 50%;
+	width: 75px;
+	height: 75px;
+}
+
+.avatarNames {
+	display: grid;
+	grid-auto-flow: column;
+	grid-area: avatarNames;
+	text-align: end;
+	gap: 10px;
+	font-size: x-large;
+	align-items: center;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: .7fr;
+	padding-left: 10px;
+}
+
+.acceptDeclineButtons {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 20px 20px;
+	align-items: stretch;
+	grid-auto-flow: row;
+	padding-right: 10px;
+	grid-template-areas:
+		"Accept Decline"
+		"Accept Decline";
+	grid-area: acceptDeclineButtons;
+}
+
+.yesNoButton {
+	width: 50px;
+	height: 50px;
+}
+
+.Accept {
+	grid-area: Accept;
+	flex-direction: column;
+	gap: 20px;
+	align-items: center;
+	justify-content: center;
+}
+
+.Decline {
+	grid-area: Decline;
+	flex-direction: column;
+	gap: 20px;
+	align-items: center;
+	justify-content: center;
+
 }
 
 .Header {
+	grid-area: Header;
+	gap: 20px;
+	background-color: rgb(51, 51, 51);
+	padding: 20px;
+	color: rgb(251, 253, 252);
+	align-items: center;
+	font-size: larger;
+}
+
+#requestCount {
+	border-radius: 50%;
+	background-color: #cccccc;
+	color: rgb(42, 42, 42);
+	padding: 5px 10px;
+}
+
+#connectionCount {
+	border-radius: 50%;
+	background-color: #cccccc;
+	color: rgb(42, 42, 42);
+	padding: 5px 10px;
+}
+
+.yourConnections {
 	display: grid;
-      padding: 2px;
-      height: 15vh;
-      width: 100vw;
-      background-color: aliceblue;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 0.8fr 1.2fr;
+	grid-template-rows: 0.7fr 1fr 1fr 1fr 1fr .5fr;
 	gap: 0px 0px;
+	outline-color: rgb(210, 210, 210);
+	outline-style: solid;
 	grid-auto-flow: row;
+	align-items: center;
 	grid-template-areas:
-		". . . . . ."
-		". . . . . ."
-		". . . . . ."
-		". . . . . .";
+		"Header Header"
+		"avatar1 adrienD"
+		"avatar2 anneJ"
+		"avatar3 alayneT"
+		"avatar4 arryY"
+		"footer footer";
+}
+
+.Header {
 	grid-area: Header;
 }
 
-.Column-1 {
-	display: grid;
-      background-color: antiquewhite;
-      padding: 2px;
-	grid-template-columns: 1.1fr 0.8fr 1.1fr 1fr;
-	grid-template-rows: 0.6fr 0.9fr 0.3fr 2.2fr;
-	gap: 0px 0px;
-	grid-auto-flow: row;
-	grid-template-areas:
-		"Profile-Card-header Profile-Card-header Profile-Card-header Profile-Card-header"
-		"Profile-Card-Content Profile-Card-Content Profile-Card-Content Profile-Card-Content"
-		"Education-Header Education-Header Education-Header Education-Header"
-		"Education-Content Education-Content Education-Content Education-Content";
-	grid-area: Column-1;
+.names {
+	font-size: x-large;
+	justify-self: center;
 }
 
-.Profile-Card-header {
-	grid-area: Profile-Card-header;
-      padding: 2px;
-      border-color: brown;
+.footer {
+	padding-top: 15px;
+	grid-area: footer;
+	height: 40px;
+	align-self: center;
+	outline-color: rgb(210, 210, 210);
+	outline-style: solid;
 }
 
-.Profile-Card-Content {
-	grid-area: Profile-Card-Content;
-      padding: 2px;
-      background-color: darkblue;
+.avatar1 {
+	grid-area: avatar1;
+	justify-self: center;
+	padding-top: 15px;
 }
 
-.Education-Header {
-	grid-area: Education-Header;
-      padding: 2px;
-      background-color: yellow;
+.avatar2 {
+	grid-area: avatar2;
+	justify-self: center;
+	padding-top: 15px;
 }
 
-.Education-Content {
-	grid-area: Education-Content;
-      padding: 2px;
-      background-color: violet;
+.avatar3 {
+	grid-area: avatar3;
+	justify-self: center;
+	padding-top: 15px;
 }
 
-.Column-2 {
-	display: grid;
-      background-color: deeppink;
-      padding: 2px;
-	grid-template-columns: 0.8fr 1.2fr 1fr;
-	grid-template-rows: 0.5fr 0.6fr 0.3fr 2.6fr 1fr;
-	gap: 0px 0px;
-	grid-auto-flow: row;
-	grid-template-areas:
-		"Connection-Request-header Connection-Request-header Connection-Request-header"
-		"Connection-Requsts Connection-Requsts Connection-Requsts"
-		"Current-Connections-header Current-Connections-header Current-Connections-header"
-		"Current-Connections Current-Connections Current-Connections"
-		". . .";
-	grid-area: Column-2;
+.avatar4 {
+	grid-area: avatar4;
+	justify-self: center;
+	padding-top: 15px;
 }
 
-.Connection-Request-header {
-	grid-area: Connection-Request-header;
-      padding: 2px;
-      background-color: darkgreen;
+.adrienD {
+	grid-area: adrienD;
+	padding-top: 15px;
+	}
+
+.anneJ {
+	grid-area: anneJ;
+	padding-top: 15px;
 }
 
-.Connection-Requsts {
-	grid-area: Connection-Requsts;
-      padding: 2px;
-      background-color: springgreen;
+.arryY {
+	grid-area: arryY;
+	padding-top: 15px;
 }
 
-.Current-Connections-header {
-	grid-area: Current-Connections-header;
-      padding: 2px;
-      background-color: coral;
-}
-
-.Current-Connections {
-	grid-area: Current-Connections;
-      padding: 2px;
-      background-color: darkgrey;
+.alayneT {
+	grid-area: alayneT;
+	padding-top: 15px;
 }

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Coding Dojo</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="navBar">
+			<p id="titleText">DojoWeather</p>
+			<p onclick="alertMsg(this)">Burbank</p>
+			<p onclick="alertMsg(this)">Chicago</p>
+			<p onclick="alertMsg(this)">Dallas</p>
+		</div>
+		<div class="subHeader">
+			<h2>San Jose</h2>
+			<div class="tempDiv">
+				<label>show temperature in</label>
+				<select id="tempSelect" name="temp">
+					<option>F</option>
+					<option>C</option>
+				</select>
+			</div>
+		</div>
+		<div class="mainCon">
+			<div class="days" id="today">
+				<h1>Today</h1>
+				<img
+					class="weatherImg"
+					id="todayWeather"
+					src="images/some_rain.png"
+					alt="itsRAINING"
+				/>
+				<p>some rain</p>
+				<div class="highLow" id="todayTEMP">
+					<p class="high">24°</p>
+					<p class="low">18°</p>
+				</div>
+			</div>
+			<div class="days" id="tomorrow">
+				<h1>Tomorrow</h1>
+				<img
+					class="weatherImg"
+					id="tomrrowWeather"
+					src="images/some_sun.png"
+					alt="itsSUNNY"
+				/>
+				<p>some sun</p>
+				<div class="highLow" id="tomrrowTEMP">
+					<p class="high">27°</p>
+					<p class="low">19°</p>
+				</div>
+			</div>
+			<div class="days" id="friday">
+				<h1>Friday</h1>
+				<img
+					class="weatherImg"
+					id="fridayWeather"
+					src="images/some_clouds.png"
+					alt="itsCLOUDY"
+				/>
+				<p>some clouds</p>
+				<div class="highLow" id="fridayTEMP">
+					<p class="high">21°</p>
+					<p class="low">16°</p>
+				</div>
+			</div>
+			<div class="days" id="saturday">
+				<h1>Saturday</h1>
+				<img
+					class="weatherImg"
+					id="saturdayWeather"
+					src="images/some_sun.png"
+					alt="itsSUNNY"
+				/>
+				<p>some sun</p>
+				<div class="highLow" id="saturdayTEMP">
+					<p class="high">26°</p>
+					<p class="low">21°</p>
+				</div>
+			</div>
+		</div>
+		<div class="cookieMessage">
+			<div>
+				<img id="cookieIMG" src="images/cookie.png" alt="cookie" />
+			</div>
+			<div>
+				<h1>Stop! Cookie time</h1>
+				<p>
+					We use cookies (sadly not the edible ones)to -personalize content and
+					ads, to provide social media features and to analyse our traffic.
+					<a href="url">Read more...</a>
+				</p>
+			</div>
+			<button onclick="cookieAccept()" id="cookieAcceptButton" type="button">I accept</button>
+		</div>
+            <script src="script.js"></script>
+	</body>
+</html>

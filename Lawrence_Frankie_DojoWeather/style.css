@@ -1,0 +1,155 @@
+* {
+      padding: 0px;
+      margin: 0px;
+}
+
+.navBar {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: auto;
+      margin-right: auto;
+      width: auto;
+      height: 120px;
+      background-color:rgb(159,197,248);
+      color: snow;
+      margin-bottom: 3%
+}
+
+#titleText {
+      font-size: xxx-large;
+      font-weight: 800;
+      margin-left: 120px;
+      margin-right: 400px;
+}
+
+.navBar > p:not(#titleText) {
+      padding: 40px;
+      font-size: x-large;
+      margin-right: 150px;
+}
+
+.subHeader {
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      align-items: center;
+      width: 75%;
+      padding-bottom: 20px;
+      border-bottom: 2px solid black;
+      margin-bottom: 3%;
+      align-items: baseline;
+}
+
+.subHeader > h2 {
+      margin: 0;
+      font-size: xxx-large;
+      font-weight: 400;
+}
+
+.tempDiv {
+      font-size: larger;
+      display: flex;
+      justify-content: end;
+      flex-grow: 1;
+      align-items: center;
+      gap: 5px
+}
+
+#tempSelect {
+      padding: 2px;
+}
+
+.mainCon {
+      display: flex;
+      margin-left: 5%;
+      margin-right: 5%;
+      flex-direction: row;
+      gap: 20px;
+      /* padding: 2% 0% 2% 0%; */
+}
+
+.days {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
+      background-color: rgb(238,238,238);
+      height: 40vh;
+      margin-bottom: 5%;
+}
+
+.days > h1 {
+      padding: 4%;
+}
+
+
+.weatherImg {
+      width: 150px;
+      border-radius: 50%;
+      padding: 4%;
+      margin-bottom: 5%;
+}
+
+.days > p {
+      font-size: xx-large;
+      font-weight: 500;
+      padding-bottom: 5%;
+}
+
+.low {
+      color: blue;
+}
+
+.high {
+      color: crimson;
+}
+
+.highLow {
+      display: flex;
+      justify-content: space-between;
+      flex: 1;
+      flex-grow: 1;
+      font-size: x-large;
+      width: 80%;
+      padding-bottom: 5%;
+      font-weight: 600;
+      align-items: end;
+}
+
+.cookieMessage {
+      display: flex;
+      flex-direction: row;
+      margin-left: auto;
+      margin-right: auto;
+      width: 1000px;
+      height: 175px;
+      outline: auto;
+      padding: 5px;
+      align-items: center;
+      gap: 20px;
+}
+.cookieMessage  h1 {
+      font-size: xx-large;
+      padding: 5px;
+}
+.cookieMessage  p {
+      font-size: x-large;
+}
+
+#cookieIMG {
+      width: 100px;
+      height: 65px;
+      align-content: center;
+
+}
+
+#cookieAcceptButton {
+      font-size: large;
+      height: 45px;
+      width: 175px;
+      box-shadow: 4px 4px black;
+      background-color: rgb(159,197,248);
+      margin-right: 3%;
+}
